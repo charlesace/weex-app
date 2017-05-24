@@ -3,7 +3,7 @@ platform :ios, '8.0'
 source 'git@github.com:CocoaPods/Specs.git' 
 
 def common
-    pod 'WeexSDK', '0.11'
+    pod 'WeexSDK', '0.12'
     pod 'SDWebImage', '4.0.0'
 end
 
