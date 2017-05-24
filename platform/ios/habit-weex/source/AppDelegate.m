@@ -32,8 +32,8 @@
     
     
     ViewController *controller = [[ViewController alloc] init];
-//    controller.url = [NSString stringWithFormat:@"file://%@/bundlejs/index.js", [NSBundle mainBundle].bundlePath];
-    controller.url = [NSString stringWithFormat:@"file://%@/app.weex.js", [NSBundle mainBundle].bundlePath];
+    controller.url = [NSString stringWithFormat:@"file://%@/bundlejs/index.js", [NSBundle mainBundle].bundlePath];
+//    controller.url = [NSString stringWithFormat:@"file://%@/app.weex.js", [NSBundle mainBundle].bundlePath];
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = controller;
     [_window makeKeyAndVisible];

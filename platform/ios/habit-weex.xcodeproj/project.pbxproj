@@ -12,8 +12,6 @@
 		D40B3F281EA05E2B00268D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B3F271EA05E2B00268D4A /* main.m */; };
 		D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
 		D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F341EA05E2B00268D4A /* LaunchScreen.storyboard */; };
-		D40C2A041ED56CBA008669F7 /* app.weex.js in Resources */ = {isa = PBXBuildFile; fileRef = D40C2A031ED56CBA008669F7 /* app.weex.js */; };
-		D40C2A051ED56CBA008669F7 /* app.weex.js in Resources */ = {isa = PBXBuildFile; fileRef = D40C2A031ED56CBA008669F7 /* app.weex.js */; };
 		D42E2F851EA0622400429B98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B3F271EA05E2B00268D4A /* main.m */; };
 		D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F341EA05E2B00268D4A /* LaunchScreen.storyboard */; };
 		D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
@@ -63,7 +61,6 @@
 		D40B3F321EA05E2B00268D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40B3F351EA05E2B00268D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D40B3F371EA05E2B00268D4A /* Info-release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-release.plist"; sourceTree = "<group>"; };
-		D40C2A031ED56CBA008669F7 /* app.weex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = app.weex.js; path = ../../../dist/app.weex.js; sourceTree = "<group>"; };
 		D42E2F8E1EA0622400429B98 /* habit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42E2F901EA0673300429B98 /* Info-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-test.plist"; sourceTree = "<group>"; };
 		D43843B21ECB684200423CC8 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
@@ -141,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D4F4EFB01EB09F4B0056E83B /* source */,
-				D40C2A031ED56CBA008669F7 /* app.weex.js */,
 				D43843B21ECB684200423CC8 /* src */,
 				D4E4F6F71EA0ACE00038225D /* bundlejs */,
 				D40B3F261EA05E2B00268D4A /* Supporting Files */,
@@ -282,7 +278,6 @@
 			files = (
 				D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */,
 				D4B6CCC41EB17E3B00436259 /* ViewController.xib in Resources */,
-				D40C2A041ED56CBA008669F7 /* app.weex.js in Resources */,
 				D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +288,6 @@
 			files = (
 				D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */,
 				D4B6CCC51EB17E3B00436259 /* ViewController.xib in Resources */,
-				D40C2A051ED56CBA008669F7 /* app.weex.js in Resources */,
 				D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
