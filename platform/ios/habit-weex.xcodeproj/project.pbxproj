@@ -22,6 +22,10 @@
 		D4B6CCC51EB17E3B00436259 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* ViewController.xib */; };
 		D4E4F6FD1EA0AD850038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E4F6FF1EA0ADEA0038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
+		D4E88D6A1ED5F1A600E5B297 /* resource in Resources */ = {isa = PBXBuildFile; fileRef = D4E88D691ED5F1A600E5B297 /* resource */; };
+		D4E88D6B1ED5F1A600E5B297 /* resource in Resources */ = {isa = PBXBuildFile; fileRef = D4E88D691ED5F1A600E5B297 /* resource */; };
+		D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
+		D4E88D731ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
 		D4F4EFB91EB09F4B0056E83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */; };
 		D4F4EFBA1EB09F4B0056E83B /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */; };
 		D4F4EFBB1EB09F4B0056E83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB81EB09F4B0056E83B /* ViewController.m */; };
@@ -63,9 +67,11 @@
 		D40B3F371EA05E2B00268D4A /* Info-release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-release.plist"; sourceTree = "<group>"; };
 		D42E2F8E1EA0622400429B98 /* habit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42E2F901EA0673300429B98 /* Info-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-test.plist"; sourceTree = "<group>"; };
-		D43843B21ECB684200423CC8 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
 		D4B6CCC31EB17E3B00436259 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		D4E4F6F71EA0ACE00038225D /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundlejs; path = ../../../bundlejs; sourceTree = "<group>"; };
+		D4E88D691ED5F1A600E5B297 /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resource; path = ../../../resource; sourceTree = "<group>"; };
+		D4E88D701ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
+		D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		D4F4EFB11EB09F4B0056E83B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4F4EFB51EB09F4B0056E83B /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
@@ -138,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				D4F4EFB01EB09F4B0056E83B /* source */,
-				D43843B21ECB684200423CC8 /* src */,
+				D4E88D691ED5F1A600E5B297 /* resource */,
 				D4E4F6F71EA0ACE00038225D /* bundlejs */,
 				D40B3F261EA05E2B00268D4A /* Supporting Files */,
 				D40B3F321EA05E2B00268D4A /* Assets.xcassets */,
@@ -157,6 +163,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D4E88D6F1ED5F7C100E5B297 /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				D4E88D701ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.h */,
+				D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */,
+			);
+			path = handler;
+			sourceTree = "<group>";
+		};
 		D4F4EFB01EB09F4B0056E83B /* source */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +188,7 @@
 		D4F4EFB31EB09F4B0056E83B /* extend */ = {
 			isa = PBXGroup;
 			children = (
+				D4E88D6F1ED5F7C100E5B297 /* handler */,
 				D4F4EFB41EB09F4B0056E83B /* module */,
 			);
 			path = extend;
@@ -276,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E88D6A1ED5F1A600E5B297 /* resource in Resources */,
 				D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */,
 				D4B6CCC41EB17E3B00436259 /* ViewController.xib in Resources */,
 				D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */,
@@ -286,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E88D6B1ED5F1A600E5B297 /* resource in Resources */,
 				D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */,
 				D4B6CCC51EB17E3B00436259 /* ViewController.xib in Resources */,
 				D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */,
@@ -394,6 +412,7 @@
 			files = (
 				D4F4EFBA1EB09F4B0056E83B /* WXEventModule.m in Sources */,
 				D4F4EFB91EB09F4B0056E83B /* AppDelegate.m in Sources */,
+				D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
 				D4F4EFBB1EB09F4B0056E83B /* ViewController.m in Sources */,
 				D40B3F281EA05E2B00268D4A /* main.m in Sources */,
 			);
@@ -405,6 +424,7 @@
 			files = (
 				D482FFEF1EB0A14600EBEFB5 /* ViewController.m in Sources */,
 				D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */,
+				D4E88D731ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
 				D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */,
 				D42E2F851EA0622400429B98 /* main.m in Sources */,
 			);

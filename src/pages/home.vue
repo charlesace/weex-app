@@ -21,7 +21,7 @@
         },
 
         back : function(){
-          this.$router.back()
+          this.$root.back()
         }
       }
     }

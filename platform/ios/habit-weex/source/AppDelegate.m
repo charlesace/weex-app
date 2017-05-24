@@ -13,6 +13,7 @@
 #import <WeexSDK/WXLog.h>
 #import <WeexSDK/WXAppConfiguration.h>
 #import "WXEventModule.h"
+#import "WXImgLoaderDefaultImpl.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -27,6 +28,7 @@
     
     [WXSDKEngine initSDKEnvironment];
     [WXLog setLogLevel:WXLogLevelLog];
+    [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
     [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
     [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     
