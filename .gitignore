@@ -2,3 +2,5 @@ node_modules
 dist
 config.js
 *log
+platform/ios/habit-weex.xcodeproj/xcuserdata
+platform/ios/Pods/Pods.xcodeproj/xcuserdata
