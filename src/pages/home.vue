@@ -21,7 +21,7 @@
         },
 
         back : function(){
-          this.$root.back()
+          this.$root.pop()
         }
       }
     }

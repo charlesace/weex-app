@@ -1,7 +1,7 @@
 <template>
     <div>
-        <image class="img" resize="cover" src='../res/image/login/launch.png'></image>
-        <!-- <text @click="ttt">{{aaa}}</text> -->
+        <!-- <image class="img" resize="cover" src='../res/image/login/launch.png'></image> -->
+        <text>{{aaa}}</text>
     </div>
 </template>
 
@@ -20,13 +20,8 @@
             }
         },
 
-        created : function() {
-            this.aaa = "sadsdsd"
-            console.log(this.aaa)
-        },
-
         methods : {
-            ttt : function() {
+            ttt : () => {
                 this.aaa = "111"
                 console.log(this)
             }

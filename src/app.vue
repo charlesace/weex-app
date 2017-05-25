@@ -10,7 +10,11 @@
 <script>
     export default {
         methods: {
-            back: function () {
+            push: (url) => {
+                this.$router.push(url)
+            },
+
+            pop: () => {
                 this.$router.back()
             }
         }
