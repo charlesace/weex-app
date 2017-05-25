@@ -1,6 +1,6 @@
 {
-  "name": "weex-test",
-  "description": "weex-test",
+  "name": "weex-app",
+  "description": "weex-app",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
