@@ -1,8 +1,9 @@
 <template>
     <div class="container">
-        <text class="xxx" @click="go">Page2-click</text>
+<!--         <text class="xxx" @click="go">Page2-click</text>
         <text class="yyy" @click="back">Page2-back</text>
-        <text v-if="xxxx">other model</text>
+        <text v-if="xxxx">other model</text> -->
+        <test-component></test-component>
        <!--  <div class="row">
           <div class="piece">
             <text class="text">7</text>
@@ -64,6 +65,8 @@
 
 <script>
     import model from '../model.js'
+    import Component1 from '../component/compoent.test.vue'
+
     export default {
       computed: {
         xxxx: function () {
@@ -79,6 +82,10 @@
         back : function(){
           this.$root.pop()
         }
+      },
+
+      components: {
+        testComponent : Component1
       }
     }
 

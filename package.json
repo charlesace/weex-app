@@ -33,7 +33,6 @@
     "webpack": "^1.14.0",
     "weex-devtool": "^0.2.64",
     "weex-loader": "^0.4.1",
-    "weex-vue-loader": "^0.2.5",
-    "weex-vue-navigator": "^1.0.1"
+    "weex-vue-loader": "^0.2.5"
   }
 }
