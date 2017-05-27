@@ -21,7 +21,7 @@
         },
 
         methods : {
-            ttt : () => {
+            ttt : function() {
                 this.aaa = "111"
                 console.log(this)
             }

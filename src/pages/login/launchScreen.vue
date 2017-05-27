@@ -15,7 +15,7 @@
     import loginManager from '../../models/loginManager.js'
 
     export default {
-        created : () => {
+        created : function() {
             loginManager.onLaunch()
         }
     }
