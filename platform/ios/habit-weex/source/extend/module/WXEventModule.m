@@ -15,6 +15,7 @@
 @synthesize weexInstance;
 
 WX_EXPORT_METHOD(@selector(openURL:))
+WX_EXPORT_METHOD(@selector(testEvent: callback:))
 
 - (void)openURL:(NSString *)url
 {
@@ -34,6 +35,12 @@ WX_EXPORT_METHOD(@selector(openURL:))
     ViewController *controller = [[ViewController alloc] init];
     controller.url = newURL;
     [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+}
+
+- (void)testEvent:(NSDictionary *)dic callback:(WXModuleCallback)callback
+{
+    NSLog(@"%@", dic);
+    callback(dic);
 }
 
 @end

@@ -8,11 +8,28 @@
 
 <script>
     export default{
+      created: function () {
+          var self = this;
+           var globalEvent = require('@weex-module/globalEvent');
+           globalEvent.addEventListener("geolocation",function(e){
+                console.log(e)
+           });
+        },
+        
+
         methods: {
-        go : function() {
-          this.$router.push("/home")
+
+          go : function() {
+            // this.$router.push("/home")
+
+            var self = this
+            var eventModule = require('@weex-module/event')
+            eventModule.testEvent({"a":'test.js', "b":2}, function(ret) { 
+              console.log(ret)
+              console.log("test finish")
+            });
+          }
         }
-      }
     }
 </script>
 

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <WeexSDK/WXSDKInstance.h>
+#import <WeexSDK/WeexSDK.h>
 
 
 @interface ViewController ()
@@ -28,6 +29,23 @@
 - (void)dealloc
 {
     [_instance destroyInstance];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    
+    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 5 * NSEC_PER_SEC);
+    dispatch_after(time, dispatch_get_main_queue(), ^(void){
+        NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+        [params setValue:@"哈哈哈" forKey:@"param1"];
+        [params setValue:@"呵呵呵" forKey:@"param2"];
+        [params setValue:[NSNumber numberWithInteger:999] forKey:@"param3"];
+//        [[WXSDKManager bridgeMgr] fireEvent:_instance.instanceId ref:WX_SDK_ROOT_REF type:@"ontest" params:params domChanges:nil];
+        
+        [_instance fireGlobalEvent:@"geolocation" params:params];
+    });
 }
 
 - (void)render

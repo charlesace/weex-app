@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WeexSDK/WeexSDK.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : WXBaseViewController
 
 @property (nonatomic, copy) NSString *url;
 
