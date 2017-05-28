@@ -1,6 +1,6 @@
 <template>
     <scroller>
-        <div class="container" @click="go">
+        <div class="container" @click="printlog">
             <text>Page1</text>
         </div>
     </scroller>
@@ -9,25 +9,25 @@
 <script>
     export default{
       created: function () {
-          var self = this;
-           var globalEvent = require('@weex-module/globalEvent');
-           globalEvent.addEventListener("geolocation",function(e){
+           let globalEvent = require('@weex-module/globalEvent');
+           globalEvent.addEventListener("geolocation", (e) => {
                 console.log(e)
            });
         },
         
 
         methods: {
-
-          go : function() {
-            // this.$router.push("/home")
-
-            var self = this
-            var eventModule = require('@weex-module/event')
-            eventModule.testEvent({"a":'test.js', "b":2}, function(ret) { 
+          printlog : function() {
+            let eventModule = require('@weex-module/event')
+            eventModule.testEvent({"a":'test.js', "b":2}, (ret) => { 
               console.log(ret)
               console.log("test finish")
+              this.go()
             });
+          },
+
+          go : function() {
+            this.$router.push("/home")
           }
         }
     }
