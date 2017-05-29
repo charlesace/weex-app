@@ -33,9 +33,14 @@
     [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     
     
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    [data setValue:@"aaa" forKey:@"param1"];
+    [data setValue:[NSNumber numberWithFloat:1.1] forKey:@"param2"];
+    
     ViewController *controller = [[ViewController alloc] init];
     controller.url = [NSString stringWithFormat:@"file://%@/bundlejs/index.js", [NSBundle mainBundle].bundlePath];
 //    controller.url = [NSString stringWithFormat:@"file://%@/app.weex.js", [NSBundle mainBundle].bundlePath];
+    controller.options = data;
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = controller;
     [_window makeKeyAndVisible];

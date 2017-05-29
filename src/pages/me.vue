@@ -13,6 +13,12 @@
            globalEvent.addEventListener("geolocation", (e) => {
                 console.log(e)
            });
+
+           console.log("hahahahahhahahahahahahahahahahah")
+           let config = this.$getConfig()
+           console.log(config)
+        // this.bb = this.$getConfig().bb; 
+        // this.bundleUrl = this.$getConfig().bundleUrl;
         },
         
 

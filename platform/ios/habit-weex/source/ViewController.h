@@ -12,6 +12,7 @@
 @interface ViewController : WXBaseViewController
 
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, strong) NSDictionary *options;
 
 @end
 

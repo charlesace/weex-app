@@ -71,7 +71,7 @@
         //process renderFinish
     };
     
-    [_instance renderWithURL:[NSURL URLWithString:_url] options:@{@"bundleUrl":_url} data:nil];
+    [_instance renderWithURL:[NSURL URLWithString:_url] options:_options data:nil];
 }
 
 
