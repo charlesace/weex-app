@@ -11,25 +11,32 @@
       created: function () {
            let globalEvent = require('@weex-module/globalEvent');
            globalEvent.addEventListener("geolocation", (e) => {
-                console.log(e)
+                // console.log(e)
            });
 
-           console.log("hahahahahhahahahahahahahahahahah")
-           let config = this.$getConfig()
-           console.log(config)
-        // this.bb = this.$getConfig().bb; 
-        // this.bundleUrl = this.$getConfig().bundleUrl;
+           // console.log("hahahahahhahahahahahahahahahahah")
+           // let config = this.$getConfig()
+           // console.log(config)
         },
         
 
         methods: {
           printlog : function() {
             let eventModule = require('@weex-module/event')
-            eventModule.testEvent({"a":'test.js', "b":2}, (ret) => { 
+
+            eventModule.jsCall("PaymentManager", "doSomething", {"a":'test.js', "b":2}, (ret) => { 
               console.log(ret)
-              console.log("test finish")
-              this.go()
+              console.log("jsCall finish")
             });
+
+            // eventModule.jsCall("PaymentManager", "doSomething", {}, (ret) => { 
+            //   console.log(ret)
+            //   console.log("jsCall finish")
+            // });
+
+            // eventModule.jsCall("PaymentManager", "doSomething", {a:1});
+
+            // eventModule.jsCall("PaymentManager", "doSomething");
           },
 
           go : function() {

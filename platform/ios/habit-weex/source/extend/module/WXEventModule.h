@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WXEventModuleProtocol.h>
 #import <WeexSDK/WXModuleProtocol.h>
+#import "ModuleHandlerBase.h"
+
 
 @interface WXEventModule : NSObject <WXEventModuleProtocol, WXModuleProtocol>
+
++ (void)initModule;
+
++ (void)registModule:(ModuleHandlerBase *)module;
 
 @end

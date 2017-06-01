@@ -15,6 +15,8 @@
 #import "WXEventModule.h"
 #import "WXImgLoaderDefaultImpl.h"
 #import "ViewController.h"
+#import "PaymentManager.h"
+
 
 @interface AppDelegate ()
 
@@ -45,7 +47,14 @@
     _window.rootViewController = controller;
     [_window makeKeyAndVisible];
     
+    [self registModules];
     return YES;
+}
+
+- (void)registModules
+{
+    [WXEventModule initModule];
+    [[PaymentManager sharedInstance] registModule];
 }
 
 

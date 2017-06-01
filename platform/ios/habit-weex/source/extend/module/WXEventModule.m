@@ -10,12 +10,46 @@
 #import "ViewController.h"
 #import <WeexSDK/WXBaseViewController.h>
 
+
+static NSMutableDictionary *registedModules = nil;
+
+
+
 @implementation WXEventModule
 
 @synthesize weexInstance;
 
 WX_EXPORT_METHOD(@selector(openURL:))
-WX_EXPORT_METHOD(@selector(testEvent: callback:))
+WX_EXPORT_METHOD(@selector(jsCall: operate: data: callback:))
+
+
++ (void)initModule
+{
+    if (nil == registedModules) {
+        registedModules = [[NSMutableDictionary alloc] init];
+    }
+}
+
++ (void)registModule:(ModuleHandlerBase *)module
+{
+    [registedModules setObject:module forKey:NSStringFromClass([module class])];
+}
+
+- (void)jsCall:(NSString *)moduleName operate:(NSString *)operate data:(NSDictionary *)dic callback:(WXModuleCallback)callback
+{
+    NSObject *obj = [registedModules objectForKey:moduleName];
+    if (nil == obj) {
+        if (nil != callback) {
+            callback(nil);
+        }
+        return;
+    }
+    
+    ModuleHandlerBase *module = (ModuleHandlerBase *)obj;
+    [module handleJsCall:operate data:dic callback:callback];
+}
+
+
 
 - (void)openURL:(NSString *)url
 {
@@ -35,12 +69,6 @@ WX_EXPORT_METHOD(@selector(testEvent: callback:))
     ViewController *controller = [[ViewController alloc] init];
     controller.url = newURL;
     [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
-}
-
-- (void)testEvent:(NSDictionary *)dic callback:(WXModuleCallback)callback
-{
-    NSLog(@"%@", dic);
-    callback(dic);
 }
 
 @end
