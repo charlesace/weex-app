@@ -9,7 +9,7 @@
 <script>
     export default{
       created: function () {
-           let globalEvent = require('@weex-module/globalEvent');
+          let globalEvent = weex.requireModule('globalEvent')
            globalEvent.addEventListener("geolocation", (e) => {
                 // console.log(e)
            });
@@ -22,8 +22,7 @@
 
         methods: {
           printlog : function() {
-            let eventModule = require('@weex-module/event')
-
+            let eventModule = weex.requireModule('event')
             eventModule.jsCall("PaymentManager", "doSomething", {"a":'test.js', "b":2}, (ret) => { 
               console.log(ret)
               console.log("jsCall finish")
