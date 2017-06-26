@@ -17,22 +17,20 @@
 		D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
 		D4510A561ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
 		D4510A571ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
+		D46D03CB1F010E7E00BEFC5C /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */; };
+		D46D03CC1F010E7E00BEFC5C /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */; };
 		D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */; };
-		D482FFEF1EB0A14600EBEFB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB81EB09F4B0056E83B /* ViewController.m */; };
 		D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */; };
-		D4B6CCC41EB17E3B00436259 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* ViewController.xib */; };
-		D4B6CCC51EB17E3B00436259 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* ViewController.xib */; };
+		D4B6CCC41EB17E3B00436259 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */; };
+		D4B6CCC51EB17E3B00436259 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */; };
 		D4D65A9A1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */; };
 		D4D65A9B1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */; };
-		D4D65A9F1EDF33A400EC9FD7 /* PaymentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A9E1EDF33A400EC9FD7 /* PaymentManager.m */; };
-		D4D65AA01EDF33A400EC9FD7 /* PaymentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A9E1EDF33A400EC9FD7 /* PaymentManager.m */; };
 		D4E4F6FD1EA0AD850038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E4F6FF1EA0ADEA0038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
 		D4E88D731ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
 		D4F4EFB91EB09F4B0056E83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */; };
 		D4F4EFBA1EB09F4B0056E83B /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */; };
-		D4F4EFBB1EB09F4B0056E83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB81EB09F4B0056E83B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,11 +70,11 @@
 		D42E2F8E1EA0622400429B98 /* habit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42E2F901EA0673300429B98 /* Info-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-test.plist"; sourceTree = "<group>"; };
 		D4510A551ED6BDC200185BB0 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
-		D4B6CCC31EB17E3B00436259 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D46D03C91F010E7E00BEFC5C /* WeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexViewController.h; sourceTree = "<group>"; };
+		D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexViewController.m; sourceTree = "<group>"; };
+		D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeexViewController.xib; sourceTree = "<group>"; };
 		D4D65A981EDF325400EC9FD7 /* ModuleHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHandlerBase.h; sourceTree = "<group>"; };
 		D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHandlerBase.m; sourceTree = "<group>"; };
-		D4D65A9D1EDF33A400EC9FD7 /* PaymentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentManager.h; sourceTree = "<group>"; };
-		D4D65A9E1EDF33A400EC9FD7 /* PaymentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentManager.m; sourceTree = "<group>"; };
 		D4E4F6F71EA0ACE00038225D /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundlejs; path = ../../../bundlejs; sourceTree = "<group>"; };
 		D4E88D701ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
@@ -84,8 +82,6 @@
 		D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4F4EFB51EB09F4B0056E83B /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
 		D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
-		D4F4EFB71EB09F4B0056E83B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4F4EFB81EB09F4B0056E83B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB33E2F825ECEE7D7D603DA5 /* Pods-habit-release.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-habit-release.debug.xcconfig"; path = "Pods/Target Support Files/Pods-habit-release/Pods-habit-release.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,15 +167,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D4D65A9C1EDF33A400EC9FD7 /* module */ = {
-			isa = PBXGroup;
-			children = (
-				D4D65A9D1EDF33A400EC9FD7 /* PaymentManager.h */,
-				D4D65A9E1EDF33A400EC9FD7 /* PaymentManager.m */,
-			);
-			path = module;
-			sourceTree = "<group>";
-		};
 		D4E88D6F1ED5F7C100E5B297 /* handler */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +180,11 @@
 			isa = PBXGroup;
 			children = (
 				D4F4EFB31EB09F4B0056E83B /* extend */,
-				D4D65A9C1EDF33A400EC9FD7 /* module */,
 				D4F4EFB11EB09F4B0056E83B /* AppDelegate.h */,
 				D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */,
-				D4F4EFB71EB09F4B0056E83B /* ViewController.h */,
-				D4F4EFB81EB09F4B0056E83B /* ViewController.m */,
-				D4B6CCC31EB17E3B00436259 /* ViewController.xib */,
+				D46D03C91F010E7E00BEFC5C /* WeexViewController.h */,
+				D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */,
+				D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -314,7 +300,7 @@
 			files = (
 				D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */,
 				D4510A561ED6BDC200185BB0 /* res in Resources */,
-				D4B6CCC41EB17E3B00436259 /* ViewController.xib in Resources */,
+				D4B6CCC41EB17E3B00436259 /* WeexViewController.xib in Resources */,
 				D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +311,7 @@
 			files = (
 				D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */,
 				D4510A571ED6BDC200185BB0 /* res in Resources */,
-				D4B6CCC51EB17E3B00436259 /* ViewController.xib in Resources */,
+				D4B6CCC51EB17E3B00436259 /* WeexViewController.xib in Resources */,
 				D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,9 +420,8 @@
 				D4D65A9A1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */,
 				D4F4EFB91EB09F4B0056E83B /* AppDelegate.m in Sources */,
 				D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
-				D4F4EFBB1EB09F4B0056E83B /* ViewController.m in Sources */,
+				D46D03CB1F010E7E00BEFC5C /* WeexViewController.m in Sources */,
 				D40B3F281EA05E2B00268D4A /* main.m in Sources */,
-				D4D65A9F1EDF33A400EC9FD7 /* PaymentManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,13 +429,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D482FFEF1EB0A14600EBEFB5 /* ViewController.m in Sources */,
 				D4D65A9B1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */,
 				D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */,
 				D4E88D731ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
 				D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */,
+				D46D03CC1F010E7E00BEFC5C /* WeexViewController.m in Sources */,
 				D42E2F851EA0622400429B98 /* main.m in Sources */,
-				D4D65AA01EDF33A400EC9FD7 /* PaymentManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

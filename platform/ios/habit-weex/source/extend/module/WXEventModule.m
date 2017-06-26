@@ -7,7 +7,6 @@
  */
 
 #import "WXEventModule.h"
-#import "ViewController.h"
 #import <WeexSDK/WXBaseViewController.h>
 
 
@@ -53,22 +52,22 @@ WX_EXPORT_METHOD(@selector(jsCall: operate: data: callback:))
 
 - (void)openURL:(NSString *)url
 {
-    NSString *newURL = url;
-    if ([url hasPrefix:@"//"]) {
-        newURL = [NSString stringWithFormat:@"http:%@", url];
-    } else if (![url hasPrefix:@"http"]) {
-        // relative path
-        newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
-    }
-    else if ([url hasPrefix:@"http://Users/examples/build/vue/"]) {
-        NSRange range = [url rangeOfString:@"http://Users/examples/build/vue/"];
-        NSString *file = [url substringFromIndex:range.length];
-        newURL = [NSString stringWithFormat:@"file://%@/bundlejs/%@", [NSBundle mainBundle].bundlePath, file];
-    }
-    
-    ViewController *controller = [[ViewController alloc] init];
-    controller.url = newURL;
-    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+//    NSString *newURL = url;
+//    if ([url hasPrefix:@"//"]) {
+//        newURL = [NSString stringWithFormat:@"http:%@", url];
+//    } else if (![url hasPrefix:@"http"]) {
+//        // relative path
+//        newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
+//    }
+//    else if ([url hasPrefix:@"http://Users/examples/build/vue/"]) {
+//        NSRange range = [url rangeOfString:@"http://Users/examples/build/vue/"];
+//        NSString *file = [url substringFromIndex:range.length];
+//        newURL = [NSString stringWithFormat:@"file://%@/bundlejs/%@", [NSBundle mainBundle].bundlePath, file];
+//    }
+//    
+//    ViewController *controller = [[ViewController alloc] init];
+//    controller.url = newURL;
+//    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
 }
 
 @end

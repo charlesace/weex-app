@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WeexViewController.h
 //  habit-weex
 //
 //  Created by Mac on 4/14/17.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <WeexSDK/WeexSDK.h>
 
-@interface ViewController : WXBaseViewController
+@interface WeexViewController : WXBaseViewController
 
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, strong) NSDictionary *options;

@@ -1,9 +1,7 @@
 <template>
-    <scroller>
-        <div class="container" @click="printlog">
-            <text>Page1</text>
-        </div>
-    </scroller>
+      <div class="container" @click="printlog">
+          <text>Page1</text>
+      </div>
 </template>
 
 <script>
@@ -50,6 +48,6 @@
   background-color:green;
   top: 50px;
   width:700px;
-  height: 7000px;
+  height: 700px;
  }
 </style>

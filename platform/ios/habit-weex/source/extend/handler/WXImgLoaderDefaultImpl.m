@@ -40,8 +40,9 @@
     // local
     if ([url hasPrefix:@"file://"]) {
         url = [url substringFromIndex:7];
+        NSString *absUrl = [NSString stringWithFormat:@"%@/res/image/%@", [NSBundle mainBundle].bundlePath, url];
         if (completedBlock) {
-            UIImage *img = [UIImage imageNamed:url];
+            UIImage *img = [UIImage imageNamed:absUrl];
             completedBlock(img, nil, YES);
         }
         return nil;
