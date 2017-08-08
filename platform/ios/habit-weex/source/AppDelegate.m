@@ -7,15 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <WeexSDK/WeexSDK.h>
-#import <WeexSDK/WXSDKEngine.h>
-#import <WeexSDK/WXDebugTool.h>
-#import <WeexSDK/WXLog.h>
-#import <WeexSDK/WXAppConfiguration.h>
-#import "WXEventModule.h"
-#import "WXImgLoaderDefaultImpl.h"
-#import "WeexViewController.h"
-
+#import "AppManager.h"
 
 @interface AppDelegate ()
 
@@ -27,25 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [WXSDKEngine initSDKEnvironment];
-    [WXLog setLogLevel:WXLogLevelLog];
-    [WXSDKEngine registerHandler:[WXImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
-    [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
-    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
-    
-    WeexViewController *controller = [[WeexViewController alloc] init];
-    controller.url = @"main.js";
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _window.rootViewController = controller;
+    [[AppManager sharedInstance] onLaunch:_window];
     [_window makeKeyAndVisible];
-    
-    [self registModules];
     return YES;
-}
-
-- (void)registModules
-{
-    [WXEventModule initModule];
 }
 
 
