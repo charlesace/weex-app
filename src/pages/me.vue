@@ -5,7 +5,9 @@
 </template>
 
 <script>
-    export default{
+    import AppUtil from '../util/appUtil.vue'
+
+    export default {
       created: function () {
           let globalEvent = weex.requireModule('globalEvent')
            globalEvent.addEventListener("geolocation", (e) => {
@@ -37,8 +39,7 @@
           },
 
           go : function() {
-            console.log("tttt")
-            this.$router.push("/home")
+            AppUtil.pushView('home', true)
           }
         }
     }
