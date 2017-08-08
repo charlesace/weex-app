@@ -3,7 +3,7 @@
   "description": "weex-app",
   "version": "0.1.0",
   "private": true,
-  "main": "main.js",
+  "main": "index.js",
   "keywords": [
     "weex",
     "vue"

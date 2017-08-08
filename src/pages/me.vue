@@ -1,5 +1,5 @@
 <template>
-      <div class="container" @click="printlog">
+      <div class="container" @click="go">
           <text>Page1</text>
       </div>
 </template>
@@ -37,6 +37,7 @@
           },
 
           go : function() {
+            console.log("tttt")
             this.$router.push("/home")
           }
         }
