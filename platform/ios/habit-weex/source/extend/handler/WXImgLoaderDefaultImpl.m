@@ -8,6 +8,7 @@
 
 #import "WXImgLoaderDefaultImpl.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "VersionManager.h"
 
 #define MIN_IMAGE_WIDTH 36
 #define MIN_IMAGE_HEIGHT 36
@@ -41,6 +42,14 @@
     if ([url hasPrefix:@"file://"]) {
         url = [url substringFromIndex:7];
         NSString *absUrl = [NSString stringWithFormat:@"%@/res/image/%@", [NSBundle mainBundle].bundlePath, url];
+        NSString *patchPath = [[VersionManager sharedInstance] patchPath];
+        if (![patchPath isEqualToString:@""]) {
+            NSString *pacthFile = [NSString stringWithFormat:@"%@/res/image/%@", patchPath, url];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:pacthFile]) {
+                absUrl = pacthFile;
+            }
+        }
+        
         if (completedBlock) {
             UIImage *img = [UIImage imageNamed:absUrl];
             completedBlock(img, nil, YES);

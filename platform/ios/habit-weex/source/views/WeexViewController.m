@@ -9,6 +9,7 @@
 #import "WeexViewController.h"
 #import <WeexSDK/WXSDKInstance.h>
 #import <WeexSDK/WeexSDK.h>
+#import "VersionManager.h"
 
 
 @interface WeexViewController()<UINavigationControllerDelegate>
@@ -55,6 +56,13 @@
     };
     
     NSString *absUrl = [NSString stringWithFormat:@"file://%@/bundlejs/%@", [NSBundle mainBundle].bundlePath, _url];
+    NSString *patchPath = [[VersionManager sharedInstance] patchPath];
+    if (![patchPath isEqualToString:@""]) {
+        NSString *pacthFile = [NSString stringWithFormat:@"%@/bundlejs/%@", patchPath, _url];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:pacthFile]) {
+            absUrl = [NSString stringWithFormat:@"file://%@", pacthFile];
+        }
+    }
     [_instance renderWithURL:[NSURL URLWithString:absUrl] options:_options data:nil];
 }
 
