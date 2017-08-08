@@ -3,18 +3,24 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SocketRocket (0.5.1)
+  - SSZipArchive (1.8.1)
+  - TBXML (1.5)
   - WeexSDK (0.15.1):
     - SocketRocket
 
 DEPENDENCIES:
   - SDWebImage (= 4.0.0)
+  - SSZipArchive (~> 1.8.1)
+  - TBXML (~> 1.5)
   - WeexSDK (= 0.15.1)
 
 SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+  TBXML: 9f9dadb239f2f2af1dadb87fe43a0ce6e479379a
   WeexSDK: 5282685df6d7279213a51a3142b915759f6e3413
 
-PODFILE CHECKSUM: 6e483c9403db846fc5898cef60182270f76198ad
+PODFILE CHECKSUM: cf3c24e9e6ed4e402799c1e73bb3d2011b38a5ca
 
 COCOAPODS: 1.2.0

@@ -16,6 +16,8 @@
 #import "WXImgLoaderDefaultImpl.h"
 #import "WeexViewController.h"
 #import "WeexUtil.h"
+#import "VersionManager.h"
+#import "LaunchViewController.h"
 
 
 @implementation AppManager
@@ -30,7 +32,7 @@
     return instance;
 }
 
-- (void)onLaunch:(UIWindow *)window
+- (void)onLaunch
 {
     // weex init
     [WXSDKEngine initSDKEnvironment];
@@ -39,13 +41,32 @@
     [WXSDKEngine registerHandler:[WXEventModule new] withProtocol:@protocol(WXEventModuleProtocol)];
     [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     
+    // modules called by js
+    [self registModules];
+    
+    // check version & open weex view
+    [self initLaunchView];
+    [[VersionManager sharedInstance] checkAppVersion:^{
+        [self initMainView];
+    }];
+}
+
+- (void)initLaunchView
+{
+    LaunchViewController *controller = [[LaunchViewController alloc] init];
+    _navController = [[WXRootViewController alloc] initWithRootViewController:controller];
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = _navController;
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+}
+
+- (void)initMainView
+{
     // js entrance
     WeexViewController *controller = [[WeexViewController alloc] init];
     controller.url = @"main.js";
-    window.rootViewController = [[WXRootViewController alloc] initWithRootViewController:controller];
-    
-    // modules called by js
-    [self registModules];
+    [_navController setViewControllers:[NSArray arrayWithObject:controller] animated:NO];
 }
 
 - (void)registModules

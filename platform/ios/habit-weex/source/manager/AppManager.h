@@ -14,7 +14,10 @@
 
 + (instancetype)sharedInstance;
 
-- (void)onLaunch:(UIWindow *)window;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navController;
+
+- (void)onLaunch;
 
 
 @end

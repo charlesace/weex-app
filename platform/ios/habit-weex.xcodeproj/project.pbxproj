@@ -17,18 +17,24 @@
 		D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
 		D4510A561ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
 		D4510A571ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
-		D46D03CB1F010E7E00BEFC5C /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */; };
-		D46D03CC1F010E7E00BEFC5C /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */; };
 		D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */; };
 		D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */; };
-		D4B6CCC41EB17E3B00436259 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */; };
-		D4B6CCC51EB17E3B00436259 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */; };
 		D4D65A9A1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */; };
 		D4D65A9B1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */; };
 		D4E37BB01F398AB000A29BB0 /* WeexUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BAF1F398AB000A29BB0 /* WeexUtil.m */; };
 		D4E37BB11F398AB000A29BB0 /* WeexUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BAF1F398AB000A29BB0 /* WeexUtil.m */; };
 		D4E37BB51F398BF600A29BB0 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BB41F398BF600A29BB0 /* AppManager.m */; };
 		D4E37BB61F398BF600A29BB0 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BB41F398BF600A29BB0 /* AppManager.m */; };
+		D4E37BB91F39927500A29BB0 /* VersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BB81F39927500A29BB0 /* VersionManager.m */; };
+		D4E37BBA1F39927500A29BB0 /* VersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BB81F39927500A29BB0 /* VersionManager.m */; };
+		D4E37BC31F39A29700A29BB0 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BBE1F39A29700A29BB0 /* LaunchViewController.m */; };
+		D4E37BC41F39A29700A29BB0 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BBE1F39A29700A29BB0 /* LaunchViewController.m */; };
+		D4E37BC51F39A29700A29BB0 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BBF1F39A29700A29BB0 /* LaunchViewController.xib */; };
+		D4E37BC61F39A29700A29BB0 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BBF1F39A29700A29BB0 /* LaunchViewController.xib */; };
+		D4E37BC71F39A29700A29BB0 /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BC11F39A29700A29BB0 /* WeexViewController.m */; };
+		D4E37BC81F39A29700A29BB0 /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BC11F39A29700A29BB0 /* WeexViewController.m */; };
+		D4E37BC91F39A29700A29BB0 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */; };
+		D4E37BCA1F39A29700A29BB0 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */; };
 		D4E4F6FD1EA0AD850038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E4F6FF1EA0ADEA0038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
@@ -74,15 +80,21 @@
 		D42E2F8E1EA0622400429B98 /* habit-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42E2F901EA0673300429B98 /* Info-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-test.plist"; sourceTree = "<group>"; };
 		D4510A551ED6BDC200185BB0 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
-		D46D03C91F010E7E00BEFC5C /* WeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexViewController.h; sourceTree = "<group>"; };
-		D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexViewController.m; sourceTree = "<group>"; };
-		D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeexViewController.xib; sourceTree = "<group>"; };
 		D4D65A981EDF325400EC9FD7 /* ModuleHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHandlerBase.h; sourceTree = "<group>"; };
 		D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHandlerBase.m; sourceTree = "<group>"; };
 		D4E37BAE1F398AB000A29BB0 /* WeexUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexUtil.h; sourceTree = "<group>"; };
 		D4E37BAF1F398AB000A29BB0 /* WeexUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexUtil.m; sourceTree = "<group>"; };
 		D4E37BB31F398BF600A29BB0 /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
 		D4E37BB41F398BF600A29BB0 /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		D4E37BB71F39927500A29BB0 /* VersionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionManager.h; sourceTree = "<group>"; };
+		D4E37BB81F39927500A29BB0 /* VersionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionManager.m; sourceTree = "<group>"; };
+		D4E37BBB1F39946500A29BB0 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		D4E37BBD1F39A29700A29BB0 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		D4E37BBE1F39A29700A29BB0 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		D4E37BBF1F39A29700A29BB0 /* LaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		D4E37BC01F39A29700A29BB0 /* WeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexViewController.h; sourceTree = "<group>"; };
+		D4E37BC11F39A29700A29BB0 /* WeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexViewController.m; sourceTree = "<group>"; };
+		D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeexViewController.xib; sourceTree = "<group>"; };
 		D4E4F6F71EA0ACE00038225D /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundlejs; path = ../../../bundlejs; sourceTree = "<group>"; };
 		D4E88D701ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
@@ -189,8 +201,23 @@
 			children = (
 				D4E37BB31F398BF600A29BB0 /* AppManager.h */,
 				D4E37BB41F398BF600A29BB0 /* AppManager.m */,
+				D4E37BB71F39927500A29BB0 /* VersionManager.h */,
+				D4E37BB81F39927500A29BB0 /* VersionManager.m */,
 			);
 			path = manager;
+			sourceTree = "<group>";
+		};
+		D4E37BBC1F39A29700A29BB0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D4E37BBD1F39A29700A29BB0 /* LaunchViewController.h */,
+				D4E37BBE1F39A29700A29BB0 /* LaunchViewController.m */,
+				D4E37BBF1F39A29700A29BB0 /* LaunchViewController.xib */,
+				D4E37BC01F39A29700A29BB0 /* WeexViewController.h */,
+				D4E37BC11F39A29700A29BB0 /* WeexViewController.m */,
+				D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		D4E88D6F1ED5F7C100E5B297 /* handler */ = {
@@ -208,11 +235,10 @@
 				D4F4EFB31EB09F4B0056E83B /* extend */,
 				D4E37BB21F398BF600A29BB0 /* manager */,
 				D4E37BAD1F398AB000A29BB0 /* modules */,
+				D4E37BBC1F39A29700A29BB0 /* views */,
+				D4E37BBB1F39946500A29BB0 /* AppMacro.h */,
 				D4F4EFB11EB09F4B0056E83B /* AppDelegate.h */,
 				D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */,
-				D46D03C91F010E7E00BEFC5C /* WeexViewController.h */,
-				D46D03CA1F010E7E00BEFC5C /* WeexViewController.m */,
-				D4B6CCC31EB17E3B00436259 /* WeexViewController.xib */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -328,8 +354,9 @@
 			files = (
 				D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */,
 				D4510A561ED6BDC200185BB0 /* res in Resources */,
-				D4B6CCC41EB17E3B00436259 /* WeexViewController.xib in Resources */,
 				D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */,
+				D4E37BC51F39A29700A29BB0 /* LaunchViewController.xib in Resources */,
+				D4E37BC91F39A29700A29BB0 /* WeexViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +366,9 @@
 			files = (
 				D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */,
 				D4510A571ED6BDC200185BB0 /* res in Resources */,
-				D4B6CCC51EB17E3B00436259 /* WeexViewController.xib in Resources */,
 				D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */,
+				D4E37BC61F39A29700A29BB0 /* LaunchViewController.xib in Resources */,
+				D4E37BCA1F39A29700A29BB0 /* WeexViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,12 +472,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E37BB91F39927500A29BB0 /* VersionManager.m in Sources */,
 				D4F4EFBA1EB09F4B0056E83B /* WXEventModule.m in Sources */,
+				D4E37BC31F39A29700A29BB0 /* LaunchViewController.m in Sources */,
 				D4D65A9A1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */,
 				D4F4EFB91EB09F4B0056E83B /* AppDelegate.m in Sources */,
+				D4E37BC71F39A29700A29BB0 /* WeexViewController.m in Sources */,
 				D4E37BB51F398BF600A29BB0 /* AppManager.m in Sources */,
 				D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
-				D46D03CB1F010E7E00BEFC5C /* WeexViewController.m in Sources */,
 				D40B3F281EA05E2B00268D4A /* main.m in Sources */,
 				D4E37BB01F398AB000A29BB0 /* WeexUtil.m in Sources */,
 			);
@@ -459,12 +489,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E37BBA1F39927500A29BB0 /* VersionManager.m in Sources */,
 				D4D65A9B1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */,
+				D4E37BC41F39A29700A29BB0 /* LaunchViewController.m in Sources */,
 				D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */,
 				D4E88D731ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
+				D4E37BC81F39A29700A29BB0 /* WeexViewController.m in Sources */,
 				D4E37BB61F398BF600A29BB0 /* AppManager.m in Sources */,
 				D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */,
-				D46D03CC1F010E7E00BEFC5C /* WeexViewController.m in Sources */,
 				D42E2F851EA0622400429B98 /* main.m in Sources */,
 				D4E37BB11F398AB000A29BB0 /* WeexUtil.m in Sources */,
 			);
@@ -579,6 +611,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YXAJA97C9H;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					ARC_ENABLED,
+					HABIT_RELEASE,
+				);
 				INFOPLIST_FILE = "habit-weex/Info-release.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -596,6 +635,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YXAJA97C9H;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					ARC_ENABLED,
+					HABIT_RELEASE,
+				);
 				INFOPLIST_FILE = "habit-weex/Info-release.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
