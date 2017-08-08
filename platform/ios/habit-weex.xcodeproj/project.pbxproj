@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		18AC0576F10E2876B7FABD3B /* libPods-habit-release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D821E288BF00ED69D8F24F7 /* libPods-habit-release.a */; };
 		69548CDB591C337B13E289AF /* libPods-habit-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B161EE72DDF3A09A8911A1D /* libPods-habit-test.a */; };
-		D40B3F281EA05E2B00268D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B3F271EA05E2B00268D4A /* main.m */; };
 		D40B3F331EA05E2B00268D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
 		D40B3F361EA05E2B00268D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F341EA05E2B00268D4A /* LaunchScreen.storyboard */; };
-		D42E2F851EA0622400429B98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40B3F271EA05E2B00268D4A /* main.m */; };
 		D42E2F881EA0622400429B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F341EA05E2B00268D4A /* LaunchScreen.storyboard */; };
 		D42E2F891EA0622400429B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B3F321EA05E2B00268D4A /* Assets.xcassets */; };
 		D4510A561ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
@@ -35,6 +33,8 @@
 		D4E37BC81F39A29700A29BB0 /* WeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BC11F39A29700A29BB0 /* WeexViewController.m */; };
 		D4E37BC91F39A29700A29BB0 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */; };
 		D4E37BCA1F39A29700A29BB0 /* WeexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */; };
+		D4E37BCC1F39AC6D00A29BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BCB1F39AC6D00A29BB0 /* main.m */; };
+		D4E37BCD1F39AC6D00A29BB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E37BCB1F39AC6D00A29BB0 /* main.m */; };
 		D4E4F6FD1EA0AD850038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E4F6FF1EA0ADEA0038225D /* bundlejs in CopyFiles */ = {isa = PBXBuildFile; fileRef = D4E4F6F71EA0ACE00038225D /* bundlejs */; };
 		D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */; };
@@ -73,7 +73,6 @@
 		8D821E288BF00ED69D8F24F7 /* libPods-habit-release.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-habit-release.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B161EE72DDF3A09A8911A1D /* libPods-habit-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-habit-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40B3F231EA05E2B00268D4A /* habit-release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D40B3F271EA05E2B00268D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D40B3F321EA05E2B00268D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40B3F351EA05E2B00268D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D40B3F371EA05E2B00268D4A /* Info-release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-release.plist"; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		D4E37BC01F39A29700A29BB0 /* WeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexViewController.h; sourceTree = "<group>"; };
 		D4E37BC11F39A29700A29BB0 /* WeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexViewController.m; sourceTree = "<group>"; };
 		D4E37BC21F39A29700A29BB0 /* WeexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeexViewController.xib; sourceTree = "<group>"; };
+		D4E37BCB1F39AC6D00A29BB0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4E4F6F71EA0ACE00038225D /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundlejs; path = ../../../bundlejs; sourceTree = "<group>"; };
 		D4E88D701ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		D4E88D711ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
@@ -170,21 +170,12 @@
 				D4F4EFB01EB09F4B0056E83B /* source */,
 				D4510A551ED6BDC200185BB0 /* res */,
 				D4E4F6F71EA0ACE00038225D /* bundlejs */,
-				D40B3F261EA05E2B00268D4A /* Supporting Files */,
 				D40B3F321EA05E2B00268D4A /* Assets.xcassets */,
 				D40B3F341EA05E2B00268D4A /* LaunchScreen.storyboard */,
 				D40B3F371EA05E2B00268D4A /* Info-release.plist */,
 				D42E2F901EA0673300429B98 /* Info-test.plist */,
 			);
 			path = "habit-weex";
-			sourceTree = "<group>";
-		};
-		D40B3F261EA05E2B00268D4A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D40B3F271EA05E2B00268D4A /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D4E37BAD1F398AB000A29BB0 /* modules */ = {
@@ -239,6 +230,7 @@
 				D4E37BBB1F39946500A29BB0 /* AppMacro.h */,
 				D4F4EFB11EB09F4B0056E83B /* AppDelegate.h */,
 				D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */,
+				D4E37BCB1F39AC6D00A29BB0 /* main.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -472,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E37BCC1F39AC6D00A29BB0 /* main.m in Sources */,
 				D4E37BB91F39927500A29BB0 /* VersionManager.m in Sources */,
 				D4F4EFBA1EB09F4B0056E83B /* WXEventModule.m in Sources */,
 				D4E37BC31F39A29700A29BB0 /* LaunchViewController.m in Sources */,
@@ -480,7 +473,6 @@
 				D4E37BC71F39A29700A29BB0 /* WeexViewController.m in Sources */,
 				D4E37BB51F398BF600A29BB0 /* AppManager.m in Sources */,
 				D4E88D721ED5F7C100E5B297 /* WXImgLoaderDefaultImpl.m in Sources */,
-				D40B3F281EA05E2B00268D4A /* main.m in Sources */,
 				D4E37BB01F398AB000A29BB0 /* WeexUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E37BCD1F39AC6D00A29BB0 /* main.m in Sources */,
 				D4E37BBA1F39927500A29BB0 /* VersionManager.m in Sources */,
 				D4D65A9B1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */,
 				D4E37BC41F39A29700A29BB0 /* LaunchViewController.m in Sources */,
@@ -497,7 +490,6 @@
 				D4E37BC81F39A29700A29BB0 /* WeexViewController.m in Sources */,
 				D4E37BB61F398BF600A29BB0 /* AppManager.m in Sources */,
 				D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */,
-				D42E2F851EA0622400429B98 /* main.m in Sources */,
 				D4E37BB11F398AB000A29BB0 /* WeexUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
