@@ -94,11 +94,26 @@
             navigator.pop(params, callback)
         },
 
-        getViewOption : function(key) {
-            if (weex.config[key]) {
-                return weex.config[key]
+        getViewOptions : function() {
+            let url = weex.config.bundleUrl
+            let result = this.deepClone(weex.config)
+            delete result.bundleUrl
+            delete result.env
+            delete result.debug
+            let pos = url.indexOf('?')
+            if (pos != -1) {
+                var str = url.substr(pos + 1)
+                var strs = str.split('&')
+                for (var i = 0; i < strs.length; i++) {
+                    result[strs[i].split('=')[0]] = unescape(strs[i].split('=')[1])
+                }
             }
-            return this.getUrlParm(key, weex.config.bundleUrl)
+            return result
+        },
+
+        getViewOption : function(key) {
+            let obj = this.getViewOptions()
+            return obj[key]
         },
 
         getAbsUrl : function(domain, params) {
@@ -118,60 +133,12 @@
             return encodeURI(url)
         },
 
-        getUrlParm : function(key, url) {
-            var reg = new RegExp('(' + key + '=)([^#,&]+)')
-            var r = url.match(reg)
-            if (r != null) {
-                return decodeURIComponent(r[2])
+        deepClone : function(source) {
+            let newObject = {}
+            for (var key in source) {
+                newObject[key] = (typeof(source[key]) === 'object') ? this.deepClone(source[key]) : source[key]
             }
-            return null
-        },
-
-        addUrlParm : function(key, value, url) {
-            var ret = url
-            var param = this.getUrlParm(key, url)
-            if (param) {
-                ret = this.removeUrlParm(key, url)
-            }
-            var posParamBegin = ret.indexOf('?')
-            if (posParamBegin != -1) {
-                var pre = ret.substr(0, posParamBegin + 1)
-                var post = ret.substr(posParamBegin + 1)
-                if (post && post != '') {
-                    ret = pre + key + '=' + value + '&' + post
-                }
-                else {
-                    ret = pre + key + '=' + value
-                }
-            }
-            else {
-                ret = ret + '?' + key + '=' + value
-            }
-            return ret
-        },
-
-        removeUrlParm : function(key, url) {
-            var path = url
-            var reg = new RegExp('(' + key + '=)([^#,&]+)')
-            var r = path.match(reg)
-            if (r == null) {
-                return path
-            }
-            var str = decodeURIComponent(r[0])
-            var index = r.index
-            if (index + str.length < path.length && path.substr(index + str.length, 1) == '&') {
-                // 后面带&
-                path = path.replace(str + '&', '')
-            }
-            else if (index > 0 && path.substr(index - 1, 1) == '&') {
-                // 前面带&
-                path = path.replace('&' + str, '');
-            }
-            else if (index > 0 && path.substr(index - 1, 1) == '?') {
-                // 前面带?
-                path = path.replace('?' + str, '')
-            }
-            return path
+            return newObject
         }
     }
 </script>

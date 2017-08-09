@@ -12,7 +12,8 @@
     export default {
       created : function() {
         console.log(AppUtil.getViewOption('debug'))
-        console.log(AppUtil.getViewOption('pppppppppppppp'))
+        console.log(AppUtil.getViewOptions())
+        console.log(weex.config)
       },
 
       methods : {
