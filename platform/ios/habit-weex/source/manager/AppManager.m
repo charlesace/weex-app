@@ -65,7 +65,7 @@
 {
     // js entrance
     WeexViewController *controller = [[WeexViewController alloc] init];
-    controller.url = @"pages/me.js";
+    controller.url = @"main.js";
     [_navController setViewControllers:[NSArray arrayWithObject:controller] animated:NO];
 }
 

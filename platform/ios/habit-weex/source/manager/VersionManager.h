@@ -26,6 +26,8 @@ typedef NS_ENUM (NSUInteger, VersionComparisonResult) {
 
 - (NSString *)localVersion;
 
+- (NSString *)applicationPath;
+
 - (NSString *)patchPath;
 
 

@@ -8,6 +8,8 @@
 
 #import "WeexUtil.h"
 #import "WXEventModule.h"
+#import "AppMacro.h"
+#import "VersionManager.h"
 
 
 @interface WeexUtil()
@@ -38,6 +40,16 @@
 - (void)registModule
 {
     [WXEventModule registModule:self];
+}
+
+- (void)initAppInfoWithCallback:(WXModuleCallback)callback
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    [dic setValue:[NSNumber numberWithBool:IS_RELEASE_VERSION] forKey:@"release"];
+    [dic setValue:[[VersionManager sharedInstance] localVersion] forKey:@"version"];
+    [dic setValue:[[VersionManager sharedInstance] applicationPath] forKey:@"appPath"];
+    [dic setValue:[[VersionManager sharedInstance] patchPath] forKey:@"patchPath"];
+    callback(dic);
 }
 
 

@@ -4,34 +4,33 @@
 
     export default {
         isIosDevice : function() {
-            return (weex.config.env.platform == "iOS")
+            return (weex.config.env.osName == "iOS")
         },
 
         isAndroidDevice : function() {
-            return (weex.config.env.platform == "android")
+            return (weex.config.env.osName == "Android")
         },
 
-        isIosNativeApp : function() {
-            let bundleUrl = weex.config.bundleUrl
-            return (bundleUrl.indexOf('file:///') >= 0)
+        isIosPlatform : function() {
+            return (weex.config.env.platform == "iOS")
         },
 
-        isAndroidNativeApp : function() {
-            let bundleUrl = weex.config.bundleUrl
-            return (bundleUrl.indexOf('file://assets/') >= 0)
+        isAndroidPlatform : function() {
+            return (weex.config.env.platform == "Android")
         },
 
         baseUrl : function() {
             let bundleUrl = weex.config.bundleUrl
-            if (this.isIosNativeApp()) {
+            if (this.isIosPlatform()) {
                 bundleUrl = bundleUrl.substring(0, bundleUrl.lastIndexOf('/') + 1)
             }
-            else if (this.isAndroidNativeApp()) {
+            else if (this.isAndroidPlatform()) {
                 bundleUrl = 'file://assets/'
             }
             else {
                 return ''
             }
+            console.log(bundleUrl)
             return bundleUrl
         },
 

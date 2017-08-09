@@ -305,6 +305,17 @@
     return content;
 }
 
+- (NSString *)applicationPath
+{
+    NSArray *arr = NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSUserDomainMask, YES);
+    if (nil == arr || [arr count] == 0){
+        return @"";
+    }
+    
+    NSString *app = arr[0];
+    return app;
+}
+
 - (NSString *)patchPath
 {
     NSArray *arr = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
