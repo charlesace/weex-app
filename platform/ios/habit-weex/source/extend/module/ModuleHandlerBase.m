@@ -12,7 +12,7 @@
         return;
     }
     
-    BOOL hasParam = (nil != dic && [dic count] > 0);
+    BOOL hasParam = (nil != dic && [dic isKindOfClass:[NSDictionary class]] && [dic count] > 0);
     BOOL hasCallback = (nil != callback);
     
     // - (void)foo:dic withCallback:callback

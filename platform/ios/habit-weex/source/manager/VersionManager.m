@@ -307,13 +307,7 @@
 
 - (NSString *)applicationPath
 {
-    NSArray *arr = NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSUserDomainMask, YES);
-    if (nil == arr || [arr count] == 0){
-        return @"";
-    }
-    
-    NSString *app = arr[0];
-    return app;
+    return [[NSBundle mainBundle] bundlePath];
 }
 
 - (NSString *)patchPath

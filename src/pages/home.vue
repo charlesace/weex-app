@@ -65,17 +65,10 @@
 </template>
 
 <script>
-    import model from '../model.js'
     import Component1 from '../component/compoent.test.vue'
     import AppUtil from '../util/appUtil.vue'
 
     export default {
-      computed: {
-        xxxx: function () {
-          return model.aaa
-        }
-      },
-
       methods: {
         // go : function() {
         //   model.aaa = !model.aaa
@@ -96,7 +89,7 @@
 
 <style scoped>
 .container{
-    background-color:red;
+    background-color:yellow;
     top: 50px;
     width: 700px;
     height: 700px;

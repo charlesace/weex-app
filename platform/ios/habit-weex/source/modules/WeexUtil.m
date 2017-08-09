@@ -52,5 +52,11 @@
     callback(dic);
 }
 
+- (void)isFileExist:(NSDictionary *)data withCallback:(WXModuleCallback)callback
+{
+    BOOL ret = [[NSFileManager defaultManager] fileExistsAtPath:data[@"file"]];
+    callback([NSNumber numberWithBool:ret]);
+}
+
 
 @end

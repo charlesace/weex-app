@@ -3,6 +3,12 @@
     let navigator = weex.requireModule('navigator')
 
     export default {
+        inited : false,
+        isRelease : true,
+        version : '',
+        appPath : '',
+        patchPath : '',
+
         isIosDevice : function() {
             return (weex.config.env.osName == "iOS")
         },
@@ -19,35 +25,68 @@
             return (weex.config.env.platform == "Android")
         },
 
+        isWebPlatform : function() {
+            return (weex.config.env.platform == "Web")
+        },
+
+        callNative : function(module, method, params, callback) {
+            if (this.isWebPlatform()) {
+                if (callback) {
+                    callback({})
+                }
+                return
+            }
+            eventModule.jsCall(module, method, params, callback)
+        },
+
+        initAppInfo : function(callback) {
+            this.callNative('WeexUtil', 'initAppInfo', null, (ret) => {
+                this.isRelease = ret.release
+                this.version = ret.version
+                this.appPath = ret.appPath
+                this.patchPath = ret.patchPath
+
+                if (callback) {
+                    callback()
+                }
+            })
+        },
+
         baseUrl : function() {
-            let bundleUrl = weex.config.bundleUrl
-            if (this.isIosPlatform()) {
-                bundleUrl = bundleUrl.substring(0, bundleUrl.lastIndexOf('/') + 1)
-            }
-            else if (this.isAndroidPlatform()) {
-                bundleUrl = 'file://assets/'
-            }
-            else {
-                return ''
-            }
-            console.log(bundleUrl)
-            return bundleUrl
+            return this.appPath + '/bundlejs/'
+        },
+
+        patchUrl : function() {
+            return this.patchPath + '/bundlejs/'
         },
 
         pushView : function(file, animated, callback) {
-            let url = this.baseUrl() + file + '.js'
-            let anim = animated ? 'true' : 'false'
-            let params = {
-              'url': url,
-              'animated' : anim
+            if (!this.inited) {
+                this.initAppInfo(() => {
+                    this.inited = true
+                    this.pushView(file, animated, callback)
+                })
+                return
             }
-            navigator.push(params, callback)
+            
+            let url = this.patchUrl() + file + '.js'
+            this.callNative('WeexUtil', 'isFileExist', {file:url}, (ret) => {
+                if (!ret) {
+                    url = this.baseUrl() + file + '.js'
+                }
+                let anim = animated ? 'true' : 'false'
+                let params = {
+                    'url': 'file://' + url,
+                    'animated' : anim
+                }
+                navigator.push(params, callback)
+            })
         },
 
         popView : function(animated, callback) {
             let anim = animated ? 'true' : 'false'
             let params = {
-              'animated' : anim
+                'animated' : anim
             }
             navigator.pop(params, callback)
         }

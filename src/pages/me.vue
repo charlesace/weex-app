@@ -39,7 +39,7 @@
           },
 
           go : function() {
-            AppUtil.pushView('home', true)
+            AppUtil.pushView('pages/home', true)
           }
         }
     }
@@ -47,7 +47,7 @@
 
  <style scoped>
  .container{
-  background-color:green;
+  background-color:purple;
   top: 50px;
   width:700px;
   height: 700px;
