@@ -39,7 +39,7 @@
           },
 
           go : function() {
-            AppUtil.pushView('pages/home', true)
+            AppUtil.pushView('pages/home', true, {pppppppppppppp:6})
           }
         }
     }
