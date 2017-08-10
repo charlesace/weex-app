@@ -13,6 +13,8 @@
 		D4510A571ED6BDC200185BB0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = D4510A551ED6BDC200185BB0 /* res */; };
 		D46C82771F3C48E800CCCC6E /* Images-test.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46C82761F3C48E800CCCC6E /* Images-test.xcassets */; };
 		D46C82791F3C48F200CCCC6E /* Images-release.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46C82781F3C48F200CCCC6E /* Images-release.xcassets */; };
+		D46C827C1F3C4EF100CCCC6E /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D46C827B1F3C4EF100CCCC6E /* launch@2x.png */; };
+		D46C827D1F3C4EF100CCCC6E /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D46C827B1F3C4EF100CCCC6E /* launch@2x.png */; };
 		D482FFEE1EB0A14200EBEFB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB21EB09F4B0056E83B /* AppDelegate.m */; };
 		D482FFF01EB0A14800EBEFB5 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4EFB61EB09F4B0056E83B /* WXEventModule.m */; };
 		D4D65A9A1EDF325400EC9FD7 /* ModuleHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */; };
@@ -77,6 +79,7 @@
 		D4510A551ED6BDC200185BB0 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		D46C82761F3C48E800CCCC6E /* Images-test.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-test.xcassets"; sourceTree = "<group>"; };
 		D46C82781F3C48F200CCCC6E /* Images-release.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-release.xcassets"; sourceTree = "<group>"; };
+		D46C827B1F3C4EF100CCCC6E /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
 		D4D65A981EDF325400EC9FD7 /* ModuleHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleHandlerBase.h; sourceTree = "<group>"; };
 		D4D65A991EDF325400EC9FD7 /* ModuleHandlerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleHandlerBase.m; sourceTree = "<group>"; };
 		D4E37BAE1F398AB000A29BB0 /* WeexUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexUtil.h; sourceTree = "<group>"; };
@@ -166,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D4F4EFB01EB09F4B0056E83B /* source */,
+				D46C827A1F3C4EF100CCCC6E /* resource */,
 				D4510A551ED6BDC200185BB0 /* res */,
 				D4E4F6F71EA0ACE00038225D /* bundlejs */,
 				D46C82761F3C48E800CCCC6E /* Images-test.xcassets */,
@@ -174,6 +178,14 @@
 				D42E2F901EA0673300429B98 /* Info-test.plist */,
 			);
 			path = "habit-weex";
+			sourceTree = "<group>";
+		};
+		D46C827A1F3C4EF100CCCC6E /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				D46C827B1F3C4EF100CCCC6E /* launch@2x.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		D4E37BAD1F398AB000A29BB0 /* modules */ = {
@@ -346,6 +358,7 @@
 				D4E37BC51F39A29700A29BB0 /* LaunchViewController.xib in Resources */,
 				D4E37BC91F39A29700A29BB0 /* WeexViewController.xib in Resources */,
 				D46C82791F3C48F200CCCC6E /* Images-release.xcassets in Resources */,
+				D46C827C1F3C4EF100CCCC6E /* launch@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +370,7 @@
 				D4510A571ED6BDC200185BB0 /* res in Resources */,
 				D4E37BC61F39A29700A29BB0 /* LaunchViewController.xib in Resources */,
 				D4E37BCA1F39A29700A29BB0 /* WeexViewController.xib in Resources */,
+				D46C827D1F3C4EF100CCCC6E /* launch@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +600,7 @@
 			baseConfigurationReference = EB33E2F825ECEE7D7D603DA5 /* Pods-habit-release.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageR;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YXAJA97C9H;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -611,7 +625,7 @@
 			baseConfigurationReference = 30A82EFDC1315507CAC2B9D2 /* Pods-habit-release.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageR;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YXAJA97C9H;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -636,7 +650,7 @@
 			baseConfigurationReference = 60DD0BC63B92EBA01CE71E9F /* Pods-habit-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageD;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = FFNF89NX68;
 				INFOPLIST_FILE = "habit-weex/Info-test.plist";
@@ -654,7 +668,7 @@
 			baseConfigurationReference = 8BFC15763334AF0224EB6958 /* Pods-habit-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageD;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = FFNF89NX68;
 				INFOPLIST_FILE = "habit-weex/Info-test.plist";

@@ -23,11 +23,20 @@
                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPc-zO-ej1">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="l4d-23-JaW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hcf-L1-zCD">
                             <rect key="frame" x="177.5" y="373.5" width="20" height="20"/>
                         </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="l4d-23-JaW" secondAttribute="trailing" id="4VO-0s-nd7"/>
+                        <constraint firstAttribute="bottom" secondItem="l4d-23-JaW" secondAttribute="bottom" id="TCL-DX-w7E"/>
+                        <constraint firstItem="l4d-23-JaW" firstAttribute="top" secondItem="WPc-zO-ej1" secondAttribute="top" id="nIg-zZ-4Xh"/>
+                        <constraint firstItem="l4d-23-JaW" firstAttribute="leading" secondItem="WPc-zO-ej1" secondAttribute="leading" id="uTN-Ef-mfV"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,4 +51,7 @@
             <point key="canvasLocation" x="217.5" y="191.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="launch.png" width="375" height="667"/>
+    </resources>
 </document>
